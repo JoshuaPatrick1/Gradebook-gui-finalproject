@@ -1,0 +1,24 @@
+-----------------------------------------
+ Gradebook System
+-----------------------------------------
+ Student Name: [Alice]
+ Student ID:   [1]
+
+ Course Name:  [Math]
+ Course Code:  [M101]
+ Instructor:   [Dr. Smith]
+
+ Assignment:   [Exam1]
+ Score:        [90]
+ Weight:       [0.5]
+ Date:         [2025-10-01]
+
+ [Create Student] [Add Course] [Add Grade] [Calculate GPA]
+
+ Output:
+ Created student: Student: Alice (ID: 1)
+ Added course: Math (M101) - Instructor: Dr. Smith
+ Added grade: Exam1: 90 (Weight: 0.5, Date: 2025-10-01)
+ Course average: 90.0
+ Student GPA: 90.0
+-----------------------------------------
