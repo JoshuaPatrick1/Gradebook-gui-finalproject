@@ -1,0 +1,72 @@
++-------------------+
+|     Student       |
++-------------------+
+| - name : String   |
+| - id : int        |
+| - courses : ArrayList<Course> |
++-------------------+
+| + getName() : String
+| + setName(name:String) : void
+| + getId() : int
+| + setId(id:int) : void
+| + getCourses() : ArrayList<Course>
+| + addCourse(course:Course) : void
+| + calculateGPA() : double
+| + toString() : String
++-------------------+
+
+            1
+Student -------------------> * Course
+        (composition)
+
++---------------------------+
+|          Course           |
++---------------------------+
+| - courseName : String     |
+| - courseCode : String     |
+| - instructorName : String |
+| - grades : ArrayList<Grade> |
++---------------------------+
+| + getCourseName() : String
+| + setCourseName(name:String) : void
+| + getCourseCode() : String
+| + setCourseCode(code:String) : void
+| + getInstructorName() : String
+| + setInstructorName(name:String) : void
+| + getGrades() : ArrayList<Grade>
+| + addGrade(grade:Grade) : void
+| + calculateAverage() : double
+| + toString() : String
++---------------------------+
+
+            1
+Course --------------------> * Grade
+        (composition)
+
++---------------------------+
+|          Grade            |
++---------------------------+
+| - assignmentName : String |
+| - score : double          |
+| - weight : double         |
+| - date : String           |
++---------------------------+
+| + getAssignmentName() : String
+| + setAssignmentName(name:String) : void
+| + getScore() : double
+| + setScore(score:double) : void
+| + getWeight() : double
+| + setWeight(weight:double) : void
+| + getDate() : String
+| + setDate(date:String) : void
+| + toString() : String
++---------------------------+
+
++---------------------------+
+|       GradebookGUI        |
++---------------------------+
+| - currentStudent : Student |
++---------------------------+
+| + start(primaryStage:Stage) : void
+| + main(args:String[]) : void
++---------------------------+
